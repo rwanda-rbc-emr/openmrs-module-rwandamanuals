@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<module configVersion="1.2">
+	<id>${project.parent.artifactId}</id>
+	<name>${project.parent.name}</name>
+	<version>${project.parent.version}</version>
+	<package>${project.parent.groupId}.${project.parent.artifactId}</package>
+	<author>Rwanda MOH</author>
+	<description>
+		${project.parent.description}
+	</description>
+	<require_version>${openMRSVersion}</require_version>
+	<activator>${project.parent.groupId}.${project.parent.artifactId}.RwandaManualsActivator</activator>
+	<messages>
+		<lang>en</lang>
+		<file>messages.properties</file>
+	</messages>
+	<messages>
+		<lang>fr</lang>
+		<file>messages_fr.properties</file>
+	</messages>
+</module>
+
