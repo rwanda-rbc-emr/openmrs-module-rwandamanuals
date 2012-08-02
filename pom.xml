@@ -12,7 +12,7 @@
 	
 	<developers>
 		<developer>
-			<name>Rwanda MOH</name>
+			<name>Rwanda MOH, PIH</name>
 		</developer>
 	</developers>
 	
@@ -20,6 +20,12 @@
 		<name>OpenMRS</name>
 		<url>http://openmrs.org</url>
 	</organization>
+
+	<scm>
+		<connection>scm:git:git@github.com:rwandamoh-emr/openmrs-module-rwandamanuals.git</connection>
+		<developerConnection>scm:git:git@github.com:rwandamoh-emr/openmrs-module-rwandamanuals.git</developerConnection>
+		<url>scm:git:git@github.com:rwandamoh-emr/openmrs-module-rwandamanuals.git</url>
+	</scm>
 
 	<modules>
 		<module>api</module>
