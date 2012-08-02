@@ -19,7 +19,6 @@ package org.openmrs.module.rwandamanuals;
  */
 public class Constants {
 
-	public static final String SUPPORT_NUMBER = "114";
-	public static final String SUPPORT_EMAIL = "rwanda.emr.helpdesk@gmail.com";
+	public static final String MODULE_ID = "rwandamanuals";
 	public static final String MANUALS_DIR = "web/module/resources/modules";
 }

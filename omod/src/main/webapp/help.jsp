@@ -15,7 +15,7 @@
 <p><spring:message code="rwandamanuals.ifAllElseFails" /></p>
 
 <ul>
-	<li><spring:message code="rwandamanuals.tollFreeSupportNumber" />: ${supportNumber}</li>
+	<li><spring:message code="rwandamanuals.tollFreeSupportNumber" />: ${supportPhone}</li>
 	<li><spring:message code="rwandamanuals.supportEmailAddress" />: <a href="mailto:${supportEmail}">${supportEmail}</a></li>
 </ul>
 

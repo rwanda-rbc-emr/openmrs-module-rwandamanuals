@@ -9,8 +9,21 @@
 	<description>
 		${project.parent.description}
 	</description>
+	
 	<require_version>${openMRSVersion}</require_version>
 	<activator>${project.parent.groupId}.${project.parent.artifactId}.RwandaManualsActivator</activator>
+	
+	<globalProperty>
+		<property>rwandamanuals.supportPhone</property>
+		<defaultValue>114</defaultValue>
+		<description>MOH EMR support phone number</description>
+	</globalProperty>
+	<globalProperty>
+		<property>rwandamanuals.supportEmail</property>
+		<defaultValue>emr-support@moh.gov.rw</defaultValue>
+		<description>MOH EMR support email address</description>
+	</globalProperty>
+	
 	<messages>
 		<lang>en</lang>
 		<file>messages.properties</file>

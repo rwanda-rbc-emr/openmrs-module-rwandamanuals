@@ -16,6 +16,8 @@ package org.openmrs.module.rwandamanuals.web.controller;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.openmrs.api.AdministrationService;
+import org.openmrs.api.context.Context;
 import org.openmrs.module.rwandamanuals.Constants;
 import org.openmrs.module.rwandamanuals.Manuals;
 import org.springframework.stereotype.Controller;
@@ -26,18 +28,20 @@ import org.springframework.web.bind.annotation.RequestMethod;
 /**
  * Manual list controller
  */
-@Controller
+@Controller("rwandaManualsHelpController")
 @RequestMapping("/help")
-public class ManualsController {
+public class HelpController {
 	
-	protected static final Log log = LogFactory.getLog(ManualsController.class);
+	protected static final Log log = LogFactory.getLog(HelpController.class);
 
 	@SuppressWarnings("unchecked")
 	@RequestMapping(method = RequestMethod.GET)
 	public String display(ModelMap model) {
+		
+		AdministrationService svc = Context.getAdministrationService();
 			
-		model.put("supportNumber", Constants.SUPPORT_NUMBER);
-		model.put("supportEmail", Constants.SUPPORT_EMAIL);
+		model.put("supportPhone", svc.getGlobalProperty(Constants.MODULE_ID + ".supportPhone"));
+		model.put("supportEmail", svc.getGlobalProperty(Constants.MODULE_ID + ".supportEmail"));
 		model.put("manuals", Manuals.getManuals());
 		
 		return "/module/rwandamanuals/help";
